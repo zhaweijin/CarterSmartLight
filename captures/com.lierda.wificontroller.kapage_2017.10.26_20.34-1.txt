@@ -1,0 +1,136 @@
+TASK com.lierda.wificontroller.kapage id=110
+  ACTIVITY com.lierda.wificontroller.kapage/.ControllerMode2Activity 8a66e99 pid=3818
+    Failure while dumping the activity: java.io.IOException: Timeout
+
+  ACTIVITY com.lierda.wificontroller.kapage/.ChooseModeActivity 1afd46b pid=3818
+    Local Activity 1d1ba1f State:
+      mResumed=true mStopped=false mFinished=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 460mcc1mnc [zh_CN] ldltr sw360dp w360dp h616dp 480dpi nrml long port finger -keyb/v/h -nav/h s.34 themeId=0}
+      mLoadersStarted=true
+      FragmentManager misc state:
+        mHost=android.app.Activity$HostCallbacks@f61d93b
+        mContainer=android.app.Activity$HostCallbacks@f61d93b
+        mCurState=5 mStateSaved=false mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false      mIsAmbientMode=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mL    Local Activity cb0554f State:
+      mResumed=false mStopped=true mFinished=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 460mcc1mnc [zh_CN] ldltr sw360dp w360dp h616dp 480dpi nrml long port finger -keyb/v/h -nav/h s.34 themeId=0}
+      mLoadersStarted=true
+      FragmentManager misc state:
+        mHost=android.app.Activity$HostCallbacks@823af2a
+        mContainer=android.app.Activity$HostCallbacks@823af2a
+        mCurState=3 mStateSaved=true mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false      mIsAmbientMode=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mLastFrameTime=35608716 (75552 ms ago)
+    View Hierarchy:
+      DecorView@b0c911b[ChooseModeActivity]
+        android.widget.LinearLayout{e7232b8 V.E...... .......D 0,0-1080,1920}
+          android.view.ViewStub{463d891 G.E...... ......I. 0,0-0,0 #10203f3 android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{ba593f6 V.E...... .......D 0,72-1080,1920 #1020002 android:id/content}
+            android.widget.LinearLayout{ed923f7 V.E...... ......ID 0,0-1080,1848 #7f090000 app:id/linearLayout1}
+              android.widget.RelativeLayout{373c264 V.E...... ......ID 0,0-1080,132 #7f090001 app:id/include1}
+                android.widget.TextView{adc6ccd V.ED..... ........ 375,21-705,110 #7f090069 app:id/tv_title}
+              android.widget.RelativeLayout{c8ef982 V.E...... .......D 0,132-1080,1848 #7f090002 app:id/relativeLayout1}
+                android.widget.LinearLayout{5720893 V.E...... .......D 0,1560-1080,1716 #7f090003 app:id/include2}
+                  android.widget.RadioGroup{4dca0d0 V.E...... ......ID 0,0-1080,156 #7f090006 app:id/radioGroup1}
+                    android.widget.RadioButton{bd008c9 VFED..C.. ......ID 0,0-358,156 #7f090048 app:id/btn_controller}
+                    android.widget.RadioButton{eb72bce VFED..C.. ......ID 358,0-722,156 #7f090049 app:id/btn_information}
+                    android.widget.RadioButton{2aa9aef VFED..C.. ......ID 722,0-1080,156 #7f09004a app:id/btn_configure}
+                android.widget.RelativeLayout{1b2f9fc V.E...... .......D 0,0-1080,1560 #7f090004 app:id/relativeLayout2}
+                  android.widget.ScrollView{6476885 VFED.V... ......ID 0,0-1080,1180 #7f090005 app:id/scrollView1}
+                    android.widget.LinearLayout{a1e36da V.E...... .......D 0,0-1080,1180}
+                      android.widget.RadioGroup{a2ff70b V.E...... .......D 0,0-1080,1180 #7f090006 app:id/radioGroup1}
+                        android.widget.RelativeLayout{133b9e8 V.E...... .......D 60,30-1020,590 #7f090007 app:id/rl_group1}
+                          android.widget.RadioButton{71b0801 VFED..C.. ......ID 0,0-360,495 #7f090008 app:id/rd_mode1}
+                          android.widget.RadioButton{4b8e6a6 VFED..C.. ......ID 600,0-960,495 #7f090009 app:id/rd_mode2}
+                          android.widget.TextView{364f8e7 V.ED..... ........ 0,495-360,560 #7f09000a app:id/textView1}
+                          android.widget.TextView{f7e8c94 V.ED..... ........ 600,495-960,560 #7f09000b app:id/textView2}
+                        android.widget.RelativeLayout{62f233d V.E...... .......D 60,620-1020,1180 #7f09000c app:id/rl_group2}
+                          android.widget.RadioButton{cfcc732 VFED..C.. ......ID 0,0-360,495 #7f09000d app:id/rd_mode3}
+                          android.widget.RadioButton{efe3c83 VFED..C.. ......ID 600,0-960,495 #7f09000e app:id/rd_mode4}
+                          android.widget.TextView{901de00 V.ED..... ........ 0,495-360,560 #7f09000f app:id/textView3}
+                          android.widget.TextView{b6fb639 V.ED..... ........ 600,495-960,560 #7f090010 app:id/textView4}
+                        android.widget.RelativeLayout{12c247e G.E...... ......I. 0,0-0,0 #7f090011 app:id/rl_group3}
+                          android.widget.RadioButton{a5e1ddf VFED..C.. ......I. 0,0-0,0 #7f090012 app:id/rd_mode5}
+                          android.widget.RadioButton{a6da2c VFED..C.. ......I. 0,0-0,0 #7f090013 app:id/rd_mode6}
+    Looper (main, tid 1) {5b15015}
+      Message 0: { when=-16ms what=1 target=com.lierda.wificontroller.kapage.DeviceManageActivity$2 }
+      (Total messages: 1, polling=false, quitting=false)
+
+  ACTIVITY com.lierda.wificontroller.kapage/.DeviceManageActivity eeeef20 pid=3818
+    Local Activity b9e56fc State:
+      mResumed=false mStopped=true mFinished=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 460mcc1mnc [zh_CN] ldltr sw360dp w360dp h616dp 480dpi nrml long port finger -keyb/v/h -nav/h s.34 themeId=0}
+      mLoadersStarted=true
+      FragmentManager misc state:
+        mHost=android.app.Activity$HostCallbacks@78c7cf5
+        mContainer=android.app.Activity$HostCallbacks@78c7cf5
+        mCurState=3 mStateSaved=true mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false      mIsAmbientMode=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mLastFrameTime=35608716 (75597 ms ago)
+    View Hierarchy:
+      DecorView@f620a8a[DeviceManageActivity]
+        android.widget.LinearLayout{cb0b8fb V.E...... ......ID 0,0-1080,1920}
+          android.view.ViewStub{cbd6d18 G.E...... ......I. 0,0-0,0 #10203f3 android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{c74f371 V.E...... ......ID 0,72-1080,1920 #1020002 android:id/content}
+            android.widget.LinearLayout{a5e4556 V.E...... ......ID 0,0-1080,1848 #7f090000 app:id/linearLayout1}
+              android.widget.RelativeLayout{9c7e9d7 V.E...... ......ID 0,0-1080,138 #7f090001 app:id/include1}
+                android.widget.Button{6a842c4 GFED..C.. ......I. 0,0-0,0 #7f09006a app:id/menuBtn}
+                android.widget.Button{19455ad VFED..C.. ......ID 975,27-1059,111 #7f09006b app:id/btn_right}
+                android.widget.TextView{f1160e2 V.ED..... ........ 408,24-672,113 #7f090069 app:id/tv_title}
+              android.widget.RelativeLayout{6b74c73 V.E...... ......ID 0,138-1080,1848 #7f090004 app:id/relativeLayout2}
+                android.widget.ScrollView{948c730 VFED.V... ......ID 0,0-1080,1710 #7f090005 app:id/scrollView1}
+                  android.widget.LinearLayout{fcd9fa9 V.E...... ......ID 0,0-1080,802 #7f09003f app:id/linearLayout2}
+                    android.widget.TextView{6e8a92e V.ED..... ........ 0,0-1080,95 #7f09000a app:id/textView1}
+                    android.widget.LinearLayout{c303ccf V.E...... ......ID 0,95-1080,95 #7f090045 app:id/ll_new_device}
+                    android.widget.TextView{a2b265c V.ED..... ........ 0,95-1080,190 #7f090046 app:id/TextView01}
+                    android.widget.ListView{ee4b80b VFED.VC.. .F.....D 0,190-1080,658 #7f090047 app:id/lv_device}
+                      android.widget.LinearLayout{1378d65 V.E...... .......D 0,0-1080,234 #7f090000 app:id/linearLayout1}
+                        android.widget.RelativeLayout{2da2a3a V.E...... ......ID 99,15-981,219 #7f090015 app:id/rlsub01}
+                          android.widget.TextView{29dd6eb V.ED..CL. ........ 0,0-882,204 #7f09004b app:id/tv_manage_device_info}
+                          android.widget.ImageView{9724c48 V.ED..... ........ 15,30-159,174 #7f090042 app:id/img_device}
+                          android.widget.ImageView{989ae1 V.ED..... ........ 753,51-867,153 #7f09004c app:id/img_status}
+                          android.widget.ImageView{b30b006 V.ED..... ........ 729,27-732,177 #7f09004d app:id/imageView1}
+    Looper (main, tid 1) {5b15015}
+      Message 0: { when=-29ms what=1 target=com.lierda.wificontroller.kapage.DeviceManageActivity$2 }
+      Message 1: { when=-23ms callback=android.app.LoadedApk$ReceiverDispatcher$Args target=android.app.ActivityThread$H }
+      Message 2: { when=-15ms what=1 target=com.lierda.wificontroller.kapage.DeviceManageActivity$2 }
+      Message 3: { when=-4ms what=1 target=com.lierda.wificontroller.kapage.DeviceManageActivity$2 }
+      Message 4: { when=-2ms callback=android.app.LoadedApk$ReceiverDispatcher$Args target=android.app.ActivityThread$H }
+      (Total messages: 5, polling=false, quitting=false)

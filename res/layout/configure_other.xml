@@ -1,0 +1,104 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="@drawable/main_bg">
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/topbar" />
+
+        <include
+            android:id="@+id/include2"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:layout_alignParentLeft="true"
+            layout="@layout/foot_bar2" android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/include2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/include1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlsub01"
+                android:layout_width="250dip"
+                android:layout_height="40dip" android:layout_gravity="center_horizontal" android:layout_marginTop="20dip">
+
+                <Button
+                    android:id="@+id/btn_ap"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/button_route_configure" android:background="@drawable/btn_apset_bg" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlsub02"
+                android:layout_width="250dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:visibility="visible" >
+
+                <Button
+                    android:id="@+id/btn_server"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/btn_remote_bg"
+                    android:text="@string/button_server_configure"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="250dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/btn_mode_bg"
+                android:text="@string/button_work_mode_configure"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="250dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/btn_reset_bg"
+                android:text="@string/button_restart"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="250dip"
+                android:layout_height="40dip"
+                android:text="@string/button_reset" android:textColor="@color/white" android:textSize="16sp" android:layout_marginTop="20dip" android:layout_gravity="center_horizontal" android:textStyle="bold" android:background="@drawable/btn_restore_bg" android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>

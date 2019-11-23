@@ -1,0 +1,112 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:orientation="vertical" android:background="@drawable/main_bg">
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            layout="@layout/topbar" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout2"
+                android:layout_alignParentTop="true" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img_device"
+                            android:layout_width="160dip"
+                            android:layout_height="160dip"
+                            android:layout_margin="13dip"
+                            android:src="@drawable/device_default1" android:layout_gravity="center_horizontal"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rlsub01"
+                            android:layout_width="251dip"
+                            android:layout_height="40dip"
+                            android:layout_marginTop="10dip" android:layout_gravity="center_horizontal" android:background="@drawable/frame_n">
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="80dip"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dip"
+                                android:text="@string/text_device_name"
+                                android:textSize="16sp" android:textColor="@color/blue_text_color" android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/et_device_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="44dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/textView1" android:background="@null" android:textColor="@color/white" android:lines="1" android:maxLines="1" android:singleLine="true">
+
+                                <requestFocus />
+                            </EditText>
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/btn_take_photo1"
+                            android:layout_width="251dip"
+                            android:layout_height="44dip"
+                            android:layout_weight="1"
+                            android:text="@string/button_take_photo" android:layout_gravity="center_horizontal" android:layout_marginTop="20dip" android:background="@drawable/photo_button_bg" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold"/>
+
+                        <Button
+                            android:id="@+id/btn_save"
+                            android:layout_width="251dip"
+                            android:layout_height="44dip"
+                            android:layout_marginTop="20dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/photo_button_bg"
+                            android:text="@string/button_save"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="52dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true">
+
+                <include
+                    android:id="@+id/include2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/foot_bar2" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">kapego</string>
+      
+    <string name="button_route_configure">AP设置</string>
+    <string name="button_server_configure">远程服务器配置</string>
+    <string name="button_work_mode_configure">工作模式切换</string>
+    <string name = "button_cancel">取消</string>
+    <string name = "button_confirm">确定</string>
+    <string name = "button_take_photo">拍照</string>
+    <string name = "button_take_photo_from_local">从相册选择</string>
+    <string name = "button_save">保存</string>
+    <string name = "button_open">打开</string>
+    <string name = "button_close">关闭</string>
+    <string name = "button_refresh">刷新</string>
+   
+    <string name = "button_setting">设置</string>
+    <string name = "button_restart">重启设备</string>
+    <string name = "button_reset">还原出厂模式</string>
+    <string name = "button_search">搜索</string>
+    <string name = "button_controller">遥控器</string>
+    <string name = "button_information">信息</string>
+    <string name = "button_configure">配置</string>
+    
+    <string name = "text_input">输入</string>
+    <string name="text_ssid">SSID</string>
+    <string name="text_password">密码</string>
+    <string name="text_router_name">路由器名称</string>
+    <string name="text_chiper_mode">加密方式</string>
+    <string name="text_chiper_algorithm">加密算法</string>
+    <string name="text_server_configure">服务器设置</string>
+    <string name="text_server_address">服务器地址</string>
+    <string name="text_server_port">服务器端口</string>
+    <string name="text_work_mode">工作模式</string>
+    <string name="text_choose_network">选择网络</string>
+    <string name="text_mode1">RF Single</string>
+    <string name="text_mode2">RF White</string>
+    <string name="text_mode3">RF RGB</string>
+    <string name="text_mode4">RF RGBW</string>
+
+    <string name = "title_device_list">设备列表</string>
+	<string name = "title_device_detail">设备详情</string>
+	<string name = "title_choose_controller">选择遥控器</string>
+    <string name="title_new_device">新设备</string>
+    <string name="title_device_manage">设备管理</string>
+    <string name="title_wifi_setting">AP设置</string>
+    <string name="title_more">更多</string>
+    
+    <string name = "text_rename">重命名名称</string>
+
+    <string name = "text_device_name">名称</string>
+    <string name = "text_device_mac">MAC地址</string>
+    <string name = "text_repeat">重复</string>
+    <string name = "text_gateway">网关</string>
+    
+  
+
+	
+	<string name = "msg_please_choose">请选择</string>
+	<string name = "hint_info">提示信息</string>
+	<string name = "hint_delete">您是否真的要删除该设备?</string>
+	<string name = "hint_please_choose_one_device_first">至少选择一个设备</string>
+	<string name = "hint_device_is_offline">设备处于离线状态</string>
+	<string name = "hint_error_ip_address">无效服务器地址</string>
+	<string name = "hint_error_server_port">无效服务器端口</string>
+	<string name = "hint_error_local_port">无效局域网端口</string>
+	<string name = "hint_error_time_out">操作超时,请检查网络配置</string>
+	<string name = "hint_error_data">数据异常</string>
+	<string name = "hint_error_not_allow_configure">设备需在AP状态下才能配置参数</string>
+	<string name = "hint_success_configure">配置成功</string>
+	
+	<string name = "hint_wait_to_restart">正在重启,请稍候...</string>
+	<string name = "hint_wait_to_restore">正在还原出厂设置,请稍候...</string>
+	<string name = "hint_wait_to_load">正在加载,请稍候...</string>
+	<string name = "hint_wait_to_configure">正在配置,请稍候...</string>
+	<string name = "hint_wait_to_save">正在保存,请稍候...</string>
+	
+</resources>

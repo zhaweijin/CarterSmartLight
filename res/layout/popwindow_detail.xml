@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@drawable/corner_bg_white_transprent" android:focusable="true" android:focusableInTouchMode="true">
+    
+    <ViewFlipper 
+        android:id="@+id/viewFlipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:scrollbars="vertical" android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/rlframe"
+            android:layout_width="fill_parent"
+            android:layout_height="262dip" android:background="@drawable/black_layer">
+
+            <Button
+                android:id="@+id/btn_take_photo"
+                android:layout_width="249dip"
+                android:layout_height="45dip"
+                android:layout_marginTop="30dip"
+                android:text="@string/button_take_photo" android:layout_centerHorizontal="true" android:background="@drawable/button1_bg" android:textColor="@color/black" android:textSize="16sp" android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_take_photo_from_local"
+                android:layout_width="249dip"
+                android:layout_height="45dip"
+                android:background="@drawable/button1_bg"
+                android:text="@string/button_take_photo_from_local"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" android:layout_centerHorizontal="true" android:layout_below="@+id/btn_take_photo" android:layout_marginTop="20dip"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="249dip"
+                android:layout_height="45dip"
+                android:background="@drawable/button2_bg"
+                android:text="@string/button_cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" android:layout_centerHorizontal="true" android:layout_below="@+id/btn_take_photo_from_local" android:layout_marginTop="40dip"/>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+</ScrollView>

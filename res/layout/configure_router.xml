@@ -1,0 +1,52 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="@drawable/main_bg">
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/topbar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/include1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlsub01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_margin="13dip">
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="54dip"
+                    android:layout_height="42dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" android:background="@drawable/btn_search_bg"/>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/text_choose_network" android:layout_centerVertical="true" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/blue_text_color"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_margin="13dip" android:cacheColorHint="#00000000" android:descendantFocusability="blocksDescendants" android:focusable="true" android:focusableInTouchMode="true">
+            </ListView>
+
+        </LinearLayout>
+
+    </RelativeLayout>

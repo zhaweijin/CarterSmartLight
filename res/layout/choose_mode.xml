@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <include
+            android:id="@+id/include2"
+            layout="@layout/foot_bar2"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/include2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_group1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dip"
+                            android:layout_marginTop="10dip">
+
+                            <RadioButton
+                                android:id="@+id/rd_mode1"
+                                android:layout_width="120dip"
+                                android:layout_height="165dip"
+                                android:background="@drawable/btn_monitor1_bg"
+                                android:button="@null"
+                                android:checked="true"
+                                android:textColor="@color/black" />
+
+                            <RadioButton
+                                android:id="@+id/rd_mode2"
+                                android:layout_width="120dip"
+                                android:layout_height="165dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/btn_monitor2_bg"
+                                android:button="@null" />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignRight="@+id/rd_mode1"
+                                android:layout_below="@+id/rd_mode1"
+                                android:gravity="center"
+                                android:text="@string/text_mode1"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/rd_mode2"
+                                android:layout_alignRight="@+id/rd_mode2"
+                                android:layout_below="@+id/rd_mode2"
+                                android:gravity="center"
+                                android:text="@string/text_mode2"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_group2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dip"
+                            android:layout_marginTop="10dip">
+
+                            <RadioButton
+                                android:id="@+id/rd_mode3"
+                                android:layout_width="120dip"
+                                android:layout_height="165dip"
+                                android:background="@drawable/btn_monitor3_bg"
+                                android:button="@null" />
+
+                            <RadioButton
+                                android:id="@+id/rd_mode4"
+                                android:layout_width="120dip"
+                                android:layout_height="165dip"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/btn_monitor4_bg"
+                                android:button="@null" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignRight="@+id/rd_mode3"
+                                android:layout_below="@+id/rd_mode3"
+                                android:gravity="center"
+                                android:text="@string/text_mode3"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/rd_mode4"
+                                android:layout_alignRight="@+id/rd_mode4"
+                                android:layout_below="@+id/rd_mode4"
+                                android:gravity="center"
+                                android:text="@string/text_mode4"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_group3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dip"
+                            android:visibility="gone">
+
+                            <RadioButton
+                                android:id="@+id/rd_mode5"
+                                android:layout_width="120dip"
+                                android:layout_height="165dip"
+                                android:background="@drawable/btn_monitor3_bg"
+                                android:button="@null" />
+
+                            <RadioButton
+                                android:id="@+id/rd_mode6"
+                                android:layout_width="120dip"
+                                android:layout_height="165dip"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/btn_monitor4_bg"
+                                android:button="@null" />
+                        </RelativeLayout>
+                    </RadioGroup>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

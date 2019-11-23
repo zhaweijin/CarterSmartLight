@@ -1,0 +1,53 @@
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlsub01"
+            android:layout_width="294dip"
+            android:layout_height="68dip"
+            android:layout_gravity="center" android:background="@drawable/btn_wireframe_bg" android:layout_margin="5dip">
+
+            <TextView
+                android:id="@+id/tv_manage_device_info"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3dip"
+                android:paddingLeft="68dip"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_device"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dip" android:src="@drawable/device_default1"/>
+
+            <ImageView
+                android:id="@+id/img_status"
+                android:layout_width="38dip"
+                android:layout_height="34dip"
+                android:src="@drawable/offline" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="5dip"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="1dip"
+                android:layout_height="50dip"
+                android:src="@drawable/line" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="50dip"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+

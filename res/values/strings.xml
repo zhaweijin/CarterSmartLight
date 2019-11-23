@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">kapego</string>
+ 
+    <string name="button_route_configure">AP Configure</string>
+    <string name="button_server_configure">Server Configure</string>
+    <string name="button_work_mode_configure">Work Mode Configure</string>
+    <string name = "button_cancel">Cancel</string>
+    <string name = "button_confirm">OK</string>
+    <string name = "button_take_photo">Take Photo</string>
+    <string name = "button_take_photo_from_local">Choose From Album</string>
+    <string name = "button_save">Save</string>
+    <string name = "button_open">Open</string>
+    <string name = "button_close">Close</string>
+    <string name = "button_refresh">Refresh</string>
+   
+    <string name = "button_setting">Configuration</string>
+    <string name = "button_restart">Reset</string>
+    <string name = "button_reset">Restore factory mode</string>
+    <string name = "button_search">Search</string>
+    <string name = "button_controller">Monitor</string>
+    <string name = "button_information">Information</string>
+    <string name = "button_configure">Configuration</string>
+    
+    <string name = "text_input">Input</string>
+    <string name="text_ssid">SSID</string>
+    <string name="text_password">Password</string>
+    <string name="text_router_name">Name</string>
+    <string name="text_chiper_mode">Chiper Mode</string>
+    <string name="text_chiper_algorithm">Chiper Algorithm</string>
+    <string name="text_server_configure">Server Configure</string>
+    <string name="text_server_address">Server Address</string>
+    <string name="text_server_port">Server Port</string>
+    <string name="text_work_mode">Work Mode</string>
+    <string name="text_choose_network">Choose Network</string>
+    <string name="text_mode1">RF Single</string>
+    <string name="text_mode2">RF White</string>
+    <string name="text_mode3">RF RGB</string>
+    <string name="text_mode4">RF RGBW</string>
+
+    <string name = "title_device_list">Device List</string>
+	<string name = "title_device_detail">Device Detail</string>
+	<string name = "title_choose_controller">Choose Monitor</string>
+    <string name="title_new_device">New Device</string>
+    <string name="title_device_manage">Device Manage</string>
+    <string name="title_wifi_setting">AP Configure</string>
+    <string name="title_more">More</string>
+    
+    <string name = "text_rename">Rename</string>
+
+    <string name = "text_device_name">Name</string>
+    <string name = "text_device_mac">MAC Address</string>
+
+	<string name = "msg_please_choose">Please choose</string>
+	<string name = "hint_info">Hint</string>
+	<string name = "hint_delete">Do you really want to delete this device?</string>
+	<string name = "hint_please_choose_one_device_first">At Least Choose One Device</string>
+	<string name = "hint_device_is_offline">Device Is Offline</string>
+	<string name = "hint_error_ip_address">Invalid Server Address</string>
+	<string name = "hint_error_server_port">Invalid Server Port</string>
+	<string name = "hint_error_local_port">Invalid Local Port</string>
+	<string name = "hint_error_time_out">Time out,please check configuration</string>
+	<string name = "hint_error_data">Data error</string>
+	<string name = "hint_error_not_allow_configure">Unable To Configure</string>
+	<string name = "hint_success_configure">Configure Success</string>
+	
+	<string name = "hint_wait_to_restart">Please wait to reset...</string>
+	<string name = "hint_wait_to_restore">Please wait to restore...</string>
+	<string name = "hint_wait_to_load">Loading...</string>
+	<string name = "hint_wait_to_configure">Please wait to configure...</string>
+	<string name = "hint_wait_to_save">Please wait to save...</string>
+
+    <string name = "text_repeat">Repeat</string>
+    <string name = "text_gateway">Gateway</string>
+</resources>

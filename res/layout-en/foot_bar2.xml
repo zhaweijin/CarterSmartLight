@@ -1,0 +1,33 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_weight="1" android:orientation="horizontal" android:background="@drawable/bottom_bar_bg_e" android:layout_height="fill_parent">
+
+	        <RadioButton
+	            android:id="@+id/btn_controller"
+	            android:layout_width="100dip"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1" android:button="@null" android:background="@drawable/menu_monitor_e_bg" android:paddingRight="1dip"/>
+	
+	        <RadioButton
+	            android:id="@+id/btn_information"
+	            android:layout_width="102dip"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1" android:button="@null" android:background="@drawable/menu_infor_e_bg"/>
+	
+	        <RadioButton
+	            android:id="@+id/btn_configure"
+	            android:layout_width="100dip"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1" android:button="@null" android:background="@drawable/menu_config_e_bg"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>

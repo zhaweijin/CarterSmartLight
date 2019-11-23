@@ -1,0 +1,250 @@
+CURRENT STATS:
+System memory usage:
+  SOff/Norm: 2 samples:
+    Cached: 343MB min, 377MB avg, 412MB max
+    Free: 38MB min, 45MB avg, 53MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 382MB min, 383MB avg, 385MB max
+    Native: 235MB min, 235MB avg, 235MB max
+  SOn /Mod : 1 samples:
+    Cached: 314MB min, 314MB avg, 314MB max
+    Free: 40MB min, 40MB avg, 40MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 388MB min, 388MB avg, 388MB max
+    Native: 227MB min, 227MB avg, 227MB max
+
+Per-Package Stats:
+  * com.lierda.wificontroller.kapage / u0a114 / v2:
+      * com.lierda.wificontroller.kapage / u0a114 / v2:
+               TOTAL: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+                 Top: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+          (Last Act): 9.0% (104MB-104MB-104MB/102MB-102MB-102MB over 1)
+            (Cached): 4.1% (203MB-200MB-203MB/200MB-200MB-200MB over 2)
+  * com.lierda.wificontroller.kapage / u0a288 / v2:
+      * com.lierda.wificontroller.kapage / u0a288 / v2:
+               TOTAL: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+                 Top: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+          (Last Act): 0.01%
+
+Summary:
+  * com.lierda.wificontroller.kapage / u0a114 / v2:
+           TOTAL: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+             Top: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+      (Last Act): 9.0% (104MB-104MB-104MB/102MB-102MB-102MB over 1)
+        (Cached): 4.1% (203MB-200MB-203MB/200MB-200MB-200MB over 2)
+  * com.lierda.wificontroller.kapage / u0a288 / v2:
+           TOTAL: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+             Top: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+      (Last Act): 0.01%
+
+Run time Stats:
+  SOff/Norm: +7m32s791ms
+  SOn /Norm: +1h46m20s888ms (running)
+       Mod : +1s694ms
+      TOTAL: +1h53m55s373ms
+
+Memory usage:
+  Kernel : 385MB (24 samples)
+  Native : 232MB (24 samples)
+  Persist: 434MB (318 samples)
+  Top    : 195MB (660 samples)
+  ImpFg  : 545MB (917 samples)
+  ImpBg  : 113MB (109 samples)
+  Service: 543MB (1287 samples)
+  Receivr: 82KB (550 samples)
+  Home   : 74MB (111 samples)
+  LastAct: 30MB (155 samples)
+  CchAct : 26MB (31 samples)
+  CchCAct: 23MB (26 samples)
+  CchEmty: 105MB (454 samples)
+  Cached : 356MB (24 samples)
+  Free   : 43MB (24 samples)
+  TOTAL  : 3.0GB
+  ServRst: 48KB (173 samples)
+
+          Start time: 2017-10-26 18:31:00
+  Total elapsed time: +2h5m40s90ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable   5459   896   266     3     0     0     0     0     0     0     0
+Zone   0     Reclaimable   2126   184    66     0     0     0     0     0     0     0     0
+Zone   0         Movable   1757   279     9     0     0     0     0     0     0     0     0
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Reserve      0     0     6     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+
+AGGREGATED OVER LAST 24 HOURS:
+System memory usage:
+  SOff/Norm: 31 samples:
+    Cached: 111MB min, 504MB avg, 1.4GB max
+    Free: 33MB min, 107MB avg, 0.95GB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 245MB min, 398MB avg, 559MB max
+    Native: 219MB min, 239MB avg, 292MB max
+       Mod : 2 samples:
+    Cached: 172MB min, 189MB avg, 205MB max
+    Free: 34MB min, 35MB avg, 35MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 390MB min, 392MB avg, 393MB max
+    Native: 224MB min, 235MB avg, 246MB max
+       Low : 1 samples:
+    Cached: 362MB min, 362MB avg, 362MB max
+    Free: 34MB min, 34MB avg, 34MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 384MB min, 384MB avg, 384MB max
+    Native: 239MB min, 239MB avg, 239MB max
+  SOn /Norm: 56 samples:
+    Cached: 31MB min, 381MB avg, 1.0GB max
+    Free: 33MB min, 90MB avg, 525MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 363MB min, 397MB avg, 560MB max
+    Native: 204MB min, 221MB avg, 244MB max
+       Mod : 19 samples:
+    Cached: 90MB min, 464MB avg, 663MB max
+    Free: 33MB min, 99MB avg, 328MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 367MB min, 405MB avg, 520MB max
+    Native: 196MB min, 217MB avg, 243MB max
+       Low : 2 samples:
+    Cached: 541MB min, 584MB avg, 628MB max
+    Free: 38MB min, 62MB avg, 87MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 373MB min, 382MB avg, 391MB max
+    Native: 226MB min, 231MB avg, 236MB max
+
+Per-Package Stats:
+  * com.lierda.wificontroller.kapage / u0a114 / v2:
+      * com.lierda.wificontroller.kapage / u0a114 / v2:
+               TOTAL: 2.8% (114MB-115MB-245MB/111MB-115MB-242MB over 22)
+                 Top: 2.8% (114MB-115MB-245MB/111MB-115MB-242MB over 22)
+          (Last Act): 1.5% (33MB-99MB-104MB/32MB-102MB-102MB over 5)
+            (Cached): 0.46% (203MB-200MB-203MB/200MB-200MB-200MB over 2)
+  * com.lierda.wificontroller.kapage / u0a288 / v2:
+      * com.lierda.wificontroller.kapage / u0a288 / v2:
+               TOTAL: 1.0% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+                 Top: 1.0% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+
+Summary:
+  * com.lierda.wificontroller.kapage / u0a114 / v2:
+           TOTAL: 2.8% (114MB-115MB-245MB/111MB-115MB-242MB over 22)
+             Top: 2.8% (114MB-115MB-245MB/111MB-115MB-242MB over 22)
+      (Last Act): 1.5% (33MB-99MB-104MB/32MB-102MB-102MB over 5)
+        (Cached): 0.46% (203MB-200MB-203MB/200MB-200MB-200MB over 2)
+  * com.lierda.wificontroller.kapage / u0a288 / v2:
+           TOTAL: 1.0% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+             Top: 1.0% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+
+Run time Stats:
+  SOff/Norm: +3h13m27s386ms
+       Mod : +1h6m10s970ms
+       Low : +1m38s111ms
+  SOn /Norm: +11h59m11s461ms
+       Mod : +2h42m54s453ms
+       Low : +14m42s889ms
+       Crit: +2s145ms
+      TOTAL: +19h18m7s415ms
+
+Memory usage:
+  Kernel : 399MB (661 samples)
+  Native : 224MB (661 samples)
+  Persist: 426MB (5585 samples)
+  Top    : 264MB (15925 samples)
+  ImpFg  : 336MB (22842 samples)
+  ImpBg  : 94MB (4459 samples)
+  Service: 752MB (38299 samples)
+  Receivr: 116KB (23972 samples)
+  Home   : 12MB (1182 samples)
+  LastAct: 10MB (6562 samples)
+  CchAct : 28MB (1917 samples)
+  CchCAct: 44MB (582 samples)
+  CchEmty: 104MB (13455 samples)
+  Cached : 417MB (661 samples)
+  Free   : 95MB (661 samples)
+  TOTAL  : 3.1GB
+  ServRst: 78KB (23881 samples)
+
+          Start time: 2017-10-25 12:08:53
+  Total elapsed time: +1d0h54m14s112ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable   5459   896   266     3     0     0     0     0     0     0     0
+Zone   0     Reclaimable   2126   184    66     0     0     0     0     0     0     0     0
+Zone   0         Movable   1757   279     9     0     0     0     0     0     0     0     0
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Reserve      0     0     6     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+
+AGGREGATED OVER LAST 3 HOURS:
+System memory usage:
+  SOff/Norm: 2 samples:
+    Cached: 343MB min, 377MB avg, 412MB max
+    Free: 38MB min, 45MB avg, 53MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 382MB min, 383MB avg, 385MB max
+    Native: 235MB min, 235MB avg, 235MB max
+  SOn /Mod : 1 samples:
+    Cached: 314MB min, 314MB avg, 314MB max
+    Free: 40MB min, 40MB avg, 40MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 388MB min, 388MB avg, 388MB max
+    Native: 227MB min, 227MB avg, 227MB max
+
+Per-Package Stats:
+  * com.lierda.wificontroller.kapage / u0a114 / v2:
+      * com.lierda.wificontroller.kapage / u0a114 / v2:
+               TOTAL: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+                 Top: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+          (Last Act): 9.0% (104MB-104MB-104MB/102MB-102MB-102MB over 1)
+            (Cached): 4.1% (203MB-200MB-203MB/200MB-200MB-200MB over 2)
+  * com.lierda.wificontroller.kapage / u0a288 / v2:
+      * com.lierda.wificontroller.kapage / u0a288 / v2:
+               TOTAL: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+                 Top: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+          (Last Act): 0.01%
+
+Summary:
+  * com.lierda.wificontroller.kapage / u0a114 / v2:
+           TOTAL: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+             Top: 27% (114MB-116MB-245MB/111MB-115MB-242MB over 21)
+      (Last Act): 9.0% (104MB-104MB-104MB/102MB-102MB-102MB over 1)
+        (Cached): 4.1% (203MB-200MB-203MB/200MB-200MB-200MB over 2)
+  * com.lierda.wificontroller.kapage / u0a288 / v2:
+           TOTAL: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+             Top: 10% (122MB-140MB-249MB/120MB-120MB-243MB over 6)
+      (Last Act): 0.01%
+
+Run time Stats:
+  SOff/Norm: +7m32s791ms
+  SOn /Norm: +1h46m21s88ms
+       Mod : +1s694ms
+      TOTAL: +1h53m55s573ms
+
+Memory usage:
+  Kernel : 385MB (24 samples)
+  Native : 232MB (24 samples)
+  Persist: 434MB (318 samples)
+  Top    : 195MB (660 samples)
+  ImpFg  : 546MB (917 samples)
+  ImpBg  : 113MB (109 samples)
+  Service: 550MB (1288 samples)
+  Receivr: 83KB (554 samples)
+  Home   : 74MB (111 samples)
+  LastAct: 30MB (155 samples)
+  CchAct : 26MB (31 samples)
+  CchCAct: 23MB (26 samples)
+  CchEmty: 106MB (456 samples)
+  Cached : 356MB (24 samples)
+  Free   : 43MB (24 samples)
+  TOTAL  : 3.0GB
+  ServRst: 48KB (173 samples)
+
+          Start time: 2017-10-26 18:31:00
+  Total elapsed time: +2h5m40s257ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable   5459   896   266     3     0     0     0     0     0     0     0
+Zone   0     Reclaimable   2126   184    66     0     0     0     0     0     0     0     0
+Zone   0         Movable   1757   279     9     0     0     0     0     0     0     0     0
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Reserve      0     0     6     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0

@@ -1,0 +1,86 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+    }
+}
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("Asia/Shanghai"))
+}
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 4
+        versionName "2.1.4"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'carter'
+            keyPassword 'carter'
+            storeFile file("../Android/signature/carter.keystore")
+            storePassword 'carter'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            //release apk
+            if (outputFile != null && outputFile.name.endsWith('release.apk')) {
+                //这里修改apk文件名
+                def fileName = "kapego-${defaultConfig.versionName}-${releaseTime()}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            //签名
+            signingConfig signingConfigs.release
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}

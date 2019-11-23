@@ -1,0 +1,183 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="@drawable/main_bg">
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            layout="@layout/topbar" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/include1" android:background="@drawable/bg">
+
+            <RelativeLayout
+                android:id="@+id/rl_controller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dip"
+                android:background="@drawable/remote_control_frame"
+                android:gravity="center"
+                android:padding="8dip" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_on"
+                    android:layout_width="112.5dip"
+                    android:layout_height="102.5dip"
+                    android:background="@drawable/mode1_on_bg2" >
+
+                    <Button
+                        android:id="@+id/btn_on"
+                        android:layout_width="96dip"
+                        android:layout_height="85.5dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/mode1_on_bg" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_off"
+                    android:layout_width="112.5dip"
+                    android:layout_height="102.5dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/mode1_off_bg2" >
+                    
+	                <Button
+	                    android:id="@+id/btn_off"
+	                    android:layout_width="96dip"
+	                    android:layout_height="85.5dip"
+	                     android:layout_centerInParent="true"
+	                    android:background="@drawable/mode1_off_bg"
+	                    android:textOff=" "
+	                    android:textOn=" " />
+	           </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_controller2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_on" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_wind"
+                        android:layout_width="106dip"
+                        android:layout_height="164dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="130dip"
+                        android:visibility="gone" >
+
+                        <Button
+                            android:id="@+id/btn_wind_plus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="82dip"
+                            android:background="@drawable/mode1_wind_plus_bg" />
+
+                        <Button
+                            android:id="@+id/btn_wind_minus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="82dip"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/mode1_wind_minus_bg" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_speed"
+                        android:layout_width="102.5dip"
+                        android:layout_height="200dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="74dip"
+                        android:background="@drawable/mode1_speed_bg2" >
+
+                        <Button
+	                        android:id="@+id/btn_speed_plus"
+	                        android:layout_width="84.5dip"
+	                        android:layout_height="133dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:background="@drawable/mode1_speed_plus_bg"
+	                        android:button="@null" />
+
+                        <Button
+                            android:id="@+id/btn_speed_minus"
+                            android:layout_width="84.5dip"
+                            android:layout_height="88.5dip"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="8dip"
+                            android:background="@drawable/mode1_speed_minus_bg"
+                            android:button="@null" />
+
+                        <TextView
+                            android:id="@+id/tv_speed"
+                            android:layout_width="28.5dip"
+                            android:layout_height="8dip"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/text_speed" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_program"
+                        android:layout_width="102.5dip"
+                        android:layout_height="200dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="74dip"
+                        android:background="@drawable/mode1_program_bg2" >
+
+                        <Button
+                            android:id="@+id/btn_program_plus"
+                            android:layout_width="85dip"
+                            android:layout_height="133dip"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/mode1_program_plus_bg"
+                            android:button="@null" />
+
+                        <Button
+                            android:id="@+id/btn_program_minus"
+                            android:layout_width="85dip"
+                            android:layout_height="88.5dip"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="8dip"
+                            android:background="@drawable/mode1_program_minus_bg"
+                            android:button="@null" />
+
+                        <TextView
+                            android:id="@+id/tv_program"
+                            android:layout_width="41.5dip"
+                            android:layout_height="8dip"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/text_program"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <com.lierda.widget.CircularSeekBar
+                    android:id="@+id/circularSeekBar1"
+                    android:layout_width="176dip"
+                    android:layout_height="176dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dip"
+                    android:background="@drawable/mode1_ring" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/text_mode1"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>

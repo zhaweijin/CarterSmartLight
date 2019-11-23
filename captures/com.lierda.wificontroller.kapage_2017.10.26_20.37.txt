@@ -1,0 +1,53 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 35818973 Realtime: 43015862
+
+** MEMINFO in pid 3818 [com.lierda.wificontroller.kapage] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     7774     7708        0        0    16384    11527     4856
+  Dalvik Heap   122971   122860        0        0   142067   125683    16384
+ Dalvik Other      634      632        0        0                           
+        Stack      700      700        0        0                           
+       Ashmem        4        4        0        0                           
+      Gfx dev    80030    74588      256        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     5849      136     4824        0                           
+    .jar mmap        0        0        0        0                           
+    .apk mmap      167        0       88        0                           
+    .ttf mmap      242        0      192        0                           
+    .dex mmap      573        8      560        0                           
+    .oat mmap     2675        0     1160        0                           
+    .art mmap     1412      944       68        0                           
+   Other mmap       27        4        0        0                           
+   EGL mtrack    25132    25132        0        0                           
+    GL mtrack     5284     5284        0        0                           
+      Unknown     1246     1228        0        0                           
+        TOTAL   254724   239228     7152        0   158451   137210    21240
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:   123872
+         Native Heap:     7708
+                Code:     6968
+               Stack:      700
+            Graphics:   105260
+       Private Other:     1872
+              System:     8344
+ 
+               TOTAL:   254724       TOTAL SWAP PSS:        0
+ 
+ Objects
+               Views:       89         ViewRootImpl:        3
+         AppContexts:        5           Activities:        3
+              Assets:        3        AssetManagers:        2
+       Local Binders:       32        Proxy Binders:       18
+       Parcel memory:        6         Parcel count:       24
+    Death Recipients:        0      OpenSSL Sockets:        0
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

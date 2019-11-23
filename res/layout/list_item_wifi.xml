@@ -1,0 +1,36 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:focusable="false">
+
+        <RadioButton
+            android:id="@+id/rd_tick"
+            android:layout_width="18dip"
+            android:layout_height="16dip"
+            android:layout_centerVertical="true" android:layout_marginLeft="5dip" android:button="@null" android:background="@drawable/tick_bg" android:focusable="false"/>
+
+        <RadioButton
+            android:id="@+id/rd_lock"
+            android:layout_width="15dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="50dip" android:focusable="false" android:background="@drawable/lock_bg" android:button="@null"/>
+
+        <ImageView
+            android:id="@+id/img_wifi"
+            android:layout_width="29dip"
+            android:layout_height="20dip"
+            android:src="@drawable/wifi_1" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="5dip" android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/tv_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:text="TextView"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" android:layout_centerVertical="true" android:layout_toRightOf="@+id/rd_tick" android:focusable="false"/>
+
+    </RelativeLayout>
