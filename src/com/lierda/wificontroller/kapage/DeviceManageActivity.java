@@ -77,6 +77,8 @@ import android.widget.ViewFlipper;
 
 public class DeviceManageActivity extends BaseActivity {
 	
+	private static final String TAG = "device";
+	
 	private static final int MAX_TIMER_INTERVAL = 5;
 	
 	private static final int MESSAGE_UDP = 1;
@@ -723,7 +725,7 @@ public class DeviceManageActivity extends BaseActivity {
 	};
 	
 	public void parseTCPResult(String tcpBuffer){
-		
+		Log.v(TAG,"tcpbuffer="+tcpBuffer);
 		if(tcpBuffer.indexOf("ok#SV#") == 0){
 			
 			//ok#SV#00:95:69:00:46:24#ST#1

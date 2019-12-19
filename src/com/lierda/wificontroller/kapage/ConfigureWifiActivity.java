@@ -85,6 +85,10 @@ public class ConfigureWifiActivity extends BaseActivity {
 	 */
 	private CC3XWifiManager mCC3XWifiManager = null;
 	WifiManager wifi;
+
+
+	private int timeout_retry = 0;
+	private int MAX_TIME = 2;
 	
 	private Handler handler = new Handler( );
 	private Runnable runnable = new Runnable( ) {
@@ -121,7 +125,7 @@ public class ConfigureWifiActivity extends BaseActivity {
 		setContentView(R.layout.configure_router);
 		
 		initTitleBar(0,R.string.title_wifi_setting,R.string.button_search);
-		
+		timeout_retry = 0;
 		getBroadcastIp();
 		mWifiManager=(WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         mWifiAdmin = new WifiAdmin(ConfigureWifiActivity.this);
@@ -173,10 +177,10 @@ public class ConfigureWifiActivity extends BaseActivity {
 		//filter.addAction(Constants.ACTION_CONNETED);
 		registerReceiver(mResReceiver,filter);
 		
-		showProgressDialog(getResources().getString(R.string.hint_wait_to_load),false);	
+		showProgressDialog(getResources().getString(R.string.hint_wait_to_load),true);
 		Thread scanThread = new Thread(new scanThread());
 		scanThread.start();
-		//scan();
+
 		//scanWifi();
 		/*
 		Intent it = new Intent(Constants.ACTION_CONNET);
@@ -202,14 +206,18 @@ public class ConfigureWifiActivity extends BaseActivity {
 	}
 	
 	public void scan(){
+		LogUtil.printInfo(".....scan.....");
 		//tryTime = 2;
 		actionTime = System.currentTimeMillis();
 		handler.postDelayed(runnable,15000); // ��ʼTimer		
 		targetIp = getIntent().getStringExtra("ip");		
-		CC3XCmd cmd = CC3XCmd.getInstance();
+		final CC3XCmd cmd = CC3XCmd.getInstance();
 		LogUtil.printInfo("targetIp = "+targetIp+",cmd="+cmd.scan());
 		mSettings.edit().putString(Constants.ACTION_TYPE, Constants.CONFIGURE_SCAN).commit();
+
 		UdpExchanger.getInstance().sendPackage(cmd.scan().getBytes(), targetIp,false);
+
+
 	}
 	
 	public void scanWifi(){
@@ -331,6 +339,7 @@ public class ConfigureWifiActivity extends BaseActivity {
 		    		popup.dismiss();
 			}
 			else if(v.getId() == R.id.btn_search){
+				timeout_retry = 0;
 				scan();
 				//scanWifi();
 			}
@@ -348,12 +357,12 @@ public class ConfigureWifiActivity extends BaseActivity {
 			if(it != null)
 			{
 				String action = it.getAction();
-				LogUtil.printInfo(action);
+				LogUtil.printInfo("config wifi="+action);
 				//if(action.equals(Constants.ACTION_CONNETED)){
 				//	scan();
 				//}
 				if(action.equals(Constants.CONFIGURE_SCAN)){
-					//LogUtil.printInfo("recv broadcast CONFIGURE_SCAN");
+					LogUtil.printInfo("recv broadcast CONFIGURE_SCAN");
 					String data = it.getStringExtra("result");
 					if(data != null){
 						
@@ -361,7 +370,8 @@ public class ConfigureWifiActivity extends BaseActivity {
 						curIndex = -1;
 			    		wifiList.clear();
 						wifiList.addAll(CC3XParser.getInstance().parseWifi(data));
-						listAdapter.notifyDataSetChanged();
+						LogUtil.printInfo("size="+wifiList.size());
+
 						listView.setAdapter(listAdapter);
 					}
 					handler.removeCallbacks(runnable); //ֹͣTimer
@@ -397,9 +407,15 @@ public class ConfigureWifiActivity extends BaseActivity {
 					cleanAction();
 				}
 				else if(action.equals(Constants.ACTION_TIME_OUT)){
-					closeProgressDialog();
-					showToast(getResources().getString(R.string.hint_error_time_out));
-					cleanAction();
+					timeout_retry++;
+					if(timeout_retry<MAX_TIME){
+						scan();
+					}else{
+						timeout_retry=0;
+						closeProgressDialog();
+						showToast(getResources().getString(R.string.hint_error_time_out));
+						cleanAction();
+					}
 				}
 			}
 		}	

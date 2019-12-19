@@ -74,26 +74,32 @@ public class TCPExchanger {
 	}
 	
 	
-	public boolean sendPackage(byte[] data){
-		
-		
+	public boolean sendPackage(final byte[] data){
+
+
 		boolean isSuccess = false;
-		try {
-			if(false == tcpSocket.isConnected())
-				tcpSocket.connect(remoteAddr);
-			OutputStream ops = tcpSocket.getOutputStream();
-			ops.write(data);
-			ops.flush();
-		       
-		       isSuccess = true;
-		       LogUtil.printInfo("send tcp success!");
-		   } 
-		    catch (Exception e) {
-		    	LogUtil.printInfo("send tcp failed!");
-		    	//udpSocket.close();
-		    	isSuccess = false;
-		   }
-		
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					if(false == tcpSocket.isConnected())
+						tcpSocket.connect(remoteAddr);
+					OutputStream ops = tcpSocket.getOutputStream();
+					ops.write(data);
+					ops.flush();
+
+					//isSuccess = true;
+					LogUtil.printInfo("send tcp success!");
+				}
+				catch (Exception e) {
+					LogUtil.printInfo("send tcp failed!");
+					//udpSocket.close();
+					//isSuccess = false;
+				}
+
+			}
+		}).start();
+
 		return isSuccess;
 	}
 	

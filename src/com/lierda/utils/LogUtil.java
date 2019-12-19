@@ -27,7 +27,8 @@ public class LogUtil {
 				//������־��sd����
 				//recordLog(Constants.SDPATH, Constants.LOGFILENAME, msg+"\n", true);
 			Log.i("test", msg);
-			System.out.println("message==="+msg);
+			//System.out.println("message==="+msg);
+
 		}
 	}
 	

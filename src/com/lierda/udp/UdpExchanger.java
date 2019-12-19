@@ -72,24 +72,29 @@ public class UdpExchanger {
 		}
 	}
 	
-	public boolean sendPackage(byte[] data,String ipAddress,boolean isBroadcast){
-		
-		int tryTime = 3;
-		boolean isResult = false;
-		while(tryTime >0 ){
-			
-			
-			tryTime--;
-			isResult = sendCmd(data,ipAddress,isBroadcast);
-			if(isResult){
-				tryTime = 0;
-				break;
+	public boolean sendPackage(final byte[] data,final String ipAddress,final boolean isBroadcast){
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				int tryTime = 3;
+				boolean isResult = false;
+				while(tryTime >0 ){
+
+
+					tryTime--;
+					isResult = sendCmd(data,ipAddress,isBroadcast);
+					if(isResult){
+						tryTime = 0;
+						break;
+					}
+					else{
+						startSocket();
+					}
+				}
 			}
-			else{
-				startSocket();
-			}
-		}
-		return isResult;
+		}).start();
+		return true;
+		//return isResult;
 	}
 	
 	

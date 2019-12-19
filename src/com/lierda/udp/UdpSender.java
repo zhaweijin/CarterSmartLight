@@ -28,39 +28,40 @@ public class UdpSender {
 	
 	
 	
-	public boolean sendPackage(byte[] data,String ipAddress){
-		
-		
-		boolean isSuccess = false;
-		try {
-				dataPacket = null;
-				udpSocket = new DatagramSocket(DEFAULT_PORT);	
-				
-				if(dataPacket == null)
-					dataPacket = new DatagramPacket(buffer, MAX_DATA_PACKET_LENGTH);      
+	public boolean sendPackage(final byte[] data,final String ipAddress){
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					dataPacket = null;
+					udpSocket = new DatagramSocket(DEFAULT_PORT);
 
-			  // DatagramPacket receivePacket = new DatagramPacket(new byte[MAX_DATA_PACKET_LENGTH], MAX_DATA_PACKET_LENGTH);
-		       dataPacket.setData( data );
-		       LogUtil.printInfo("send data length="+Integer.toString(data.length));
-		       dataPacket.setLength( data.length );
-		       dataPacket.setPort( TARGET_PORT );   
-		   
-		       InetAddress broadcastAddr;	   
-		       broadcastAddr = InetAddress.getByName(ipAddress); //"192.168.1.11"
-		       dataPacket.setAddress(broadcastAddr);
-		       udpSocket.setBroadcast(true);
-		       udpSocket.send(dataPacket);
-		       udpSocket.close();
-		       
-		       isSuccess = true;
-		       LogUtil.printInfo("send success!");
-		   } 
-		    catch (Exception e) {
-		    	LogUtil.printInfo("send failed!");
-		    	udpSocket.close();
-		    	isSuccess = false;
-		   }
-		
-		return isSuccess;
+					if(dataPacket == null)
+						dataPacket = new DatagramPacket(buffer, MAX_DATA_PACKET_LENGTH);
+
+					// DatagramPacket receivePacket = new DatagramPacket(new byte[MAX_DATA_PACKET_LENGTH], MAX_DATA_PACKET_LENGTH);
+					dataPacket.setData( data );
+					LogUtil.printInfo("send data length="+Integer.toString(data.length));
+					dataPacket.setLength( data.length );
+					dataPacket.setPort( TARGET_PORT );
+
+					InetAddress broadcastAddr;
+					broadcastAddr = InetAddress.getByName(ipAddress); //"192.168.1.11"
+					dataPacket.setAddress(broadcastAddr);
+					udpSocket.setBroadcast(true);
+					udpSocket.send(dataPacket);
+					udpSocket.close();
+
+					LogUtil.printInfo("send success!");
+				}
+				catch (Exception e) {
+					LogUtil.printInfo("send failed!");
+					udpSocket.close();
+				}
+
+			}
+		}).start();
+
+		return true;
 	}
 }

@@ -284,27 +284,24 @@ public class ControllerMode4Activity extends BaseActivity {
 		}
 		
 	}
-	
-	public void sendCmd(){
-		if(device!=null){
-			if(device.getStatus() == Constants.STATUS_ONLINE){
-				
-				LogUtil.printInfo("targetIp = "+device.getIpStr2()+",cmd="+Integer.toHexString(cmdBytes[0])+Integer.toHexString(cmdBytes[1]));
+
+	public void sendCmd() {
+		if (device != null) {
+			if (device.getStatus() == Constants.STATUS_ONLINE) {
+
+				LogUtil.printInfo("targetIp = " + device.getIpStr2() + ",cmd=" + Integer.toHexString(cmdBytes[0]) + Integer.toHexString(cmdBytes[1]));
 				UdpSender.getInstance().sendPackage(cmdBytes, device.getIpStr2());
-			}
-			else if(device.getStatus() == Constants.STATUS_REMOTE){
-				
+			} else if (device.getStatus() == Constants.STATUS_REMOTE) {
+				LogUtil.printInfo("STATUS_REMOTE");
 				CC3XCmd cmd = CC3XCmd.getInstance();
-				String cmdStr = cmd.remoteControl(device.getMacStr(), StringUtils.toHexString(cmdBytes, ""));				
+				String cmdStr = cmd.remoteControl(device.getMacStr(), StringUtils.toHexString(cmdBytes, ""));
 				TCPExchanger.getInstance().sendPackage(cmdStr.getBytes());
 				LogUtil.printInfo(cmdStr);
-			}
-			else{
+			} else {
 				//
 				//showToast(getResources().getString(R.string.hint_error_data));
 			}
-		}
-		else{
+		} else {
 			//showToast(getResources().getString(R.string.hint_error_data));
 		}
 	}

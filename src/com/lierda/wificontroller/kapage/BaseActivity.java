@@ -47,7 +47,6 @@ public class BaseActivity extends Activity {
 		ipStr= Formatter.formatIpAddress(ipAddress);
 		LogUtil.printInfo("hostip="+ipStr);
 		//Toast.makeText(BaseActivity.this, ipStr, Toast.LENGTH_SHORT).show();
-		
 		mSettings = getSharedPreferences(CC3XConstants.SETTING_INFOS,0);
 	}
 
